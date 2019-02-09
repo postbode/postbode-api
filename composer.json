@@ -11,5 +11,10 @@
             "name": "Mark Hameetman",
             "email": "mark@postbode.nu"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "Postbode\\": "src"
+        }
+    },
 }
