@@ -25,3 +25,22 @@ foreach($letters AS $letter){
     // use $letter
 }
 ```
+### Send letter
+```php
+$postbode = new \Postbode\PostbodeClient(API_KEY);
+
+$filename = 'example.pdf';
+$envelope_id = 2;
+$country = 'NL';
+$registered = false; // Registered letter
+$send_direct = false; // Create concept in mailbox
+
+$letter = $postbode->sendLetter(MAILBOX_ID, $filename, $envelope_id, $country, $registered, $send_direct);
+if(!is_array($letter)){
+    echo 'Failed! Errorcode: '.$letter;
+}else{
+    echo 'Letter sent!';
+    echo '<br /><pre>';
+    print_r($letter);
+}
+```
