@@ -47,3 +47,25 @@ if(!is_array($letter)){
     print_r($letter);
 }
 ```
+
+### Add letters to queue and send in one request
+```php
+$postbode = new \Postbode\PostbodeClient(API_KEY);
+
+$envelope_id = 2;
+$country = 'NL';
+$registered = false; // Registered letter
+$send_direct = false; // Create concept in mailbox
+
+$postbode->addLetterToQueue(MAILBOX_ID, 'Letter_A.pdf', $envelope_id, $country, $registered, $send_direct);
+$postbode->addLetterToQueue(MAILBOX_ID, 'Letter_B.pdf', $envelope_id, $country, $registered, $send_direct);
+$postbode->sendLetterQueue();
+
+if(!is_array($letter)){
+    echo 'Failed! Errorcode: '.$letter;
+}else{
+    echo 'Letter sent!';
+    echo '<br /><pre>';
+    print_r($letter);
+}
+```
