@@ -8,6 +8,9 @@
 composer require postbode/postbode-api
 ```
 
+## Complete documentation
+Our complete API is available at https://api.postbode.nu
+
 ## Usage
 ### List all available mailboxes
 ```php
