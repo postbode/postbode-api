@@ -1,6 +1,6 @@
 <?php
 
-namespace PostbodeApi;
+namespace Postbode;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\RequestOptions;

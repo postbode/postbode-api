@@ -12,7 +12,7 @@
     }],
     "autoload": {
         "psr-4": {
-            "PostbodeApi\\": "src"
+            "Postbode\\": "src"
         }
     },
     "require-dev": {
