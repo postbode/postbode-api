@@ -132,7 +132,7 @@ class PostbodeClient
         ];
     }
 
-    public function sendLetterQueue()
+    public function sendLetterQueue($mailbox_id)
     {
         return $this->sendRequest('POST', '/mailbox/'.$mailbox_id.'/letterbatch', $this->letter_queue);
     }
