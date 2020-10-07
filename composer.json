@@ -2,8 +2,8 @@
     "name": "postbode/postbode-api",
     "description": "Official supported client for Postbode.nu (https://postbode.nu)",
     "require": {
-        "php": "~7.2",
-        "guzzlehttp/guzzle": "~7.0.1"
+        "php": "~7.0",
+        "guzzlehttp/guzzle": "~6.0|~7.0.1"
     },
     "license": "MIT",
     "authors": [{
